@@ -1,0 +1,398 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>
+        Crumbl
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .flavor-card:hover .btn {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .flavor-card:hover .btn-learn-more {
+            border-color: black;
+        }
+        .flavor-card:hover .btn-order-now {
+            background-color: black;
+            color: white;
+        }
+        .sticky-header {
+            background-color: rgba(255, 165, 0, 0.9);
+            transition: background-color 0.3s;
+        }
+        .sticky-header.transparent {
+            background-color: transparent;
+        }
+        .sticky-header .order-now-btn {
+            display: none;
+        }
+        .sticky-header.sticky .order-now-btn {
+            display: inline-block;
+        }
+		img.w-48.h-48.object-cover.rounded-full {
+			width: 300px;
+			height: 300px;
+			margin: -50px;
+		   
+		}
+		.text-2xl.font-bold {
+			z-index: 9999;
+		}
+		img.w-48.h-48.object-cover.rounded-full.mleft{ margin-left: 50px;}
+		img.w-48.h-48.object-cover.rounded-full.mright{ margin-right: 50px;}
+		.md\:ml-6.mt-4.md\:mt-0.w-full {    margin-left: 100px; padding-left:50px}
+		.hgap{width:100%; height:100px}
+		.md\:mr-6.mt-4.md\:mt-0.w-full {    padding-left: 50px;}
+
+@media (max-width:768px){
+
+		img.w-48.h-48.object-cover.rounded-full {margin: 0px;}
+		img.w-48.h-48.object-cover.rounded-full.mleft{ margin-left: 0px;}
+		img.w-48.h-48.object-cover.rounded-full.mright{ margin-right: 0px;}
+		.md\:ml-6.mt-4.md\:mt-0.w-full {margin-left: 0px;	}
+		.hgap{width:0; height:0px}
+		.md\:mr-6.mt-4.md\:mt-0.w-full {    padding-left: 0px;}
+
+}
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+<!-- Header Section -->
+<header id="header" class="sticky-header transparent absolute top-0 left-0 w-full z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+        <div class=" text-2xl font-bold">
+            <button id="menu-toggle" class="focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div class=" text-4xl font-bold mx-auto">
+            crumbl
+        </div>
+        <div class="order-now-btn">
+            <button class="bg-black text-white py-2 px-4 rounded">
+                Order Now
+            </button>
+        </div>
+    </div>
+    <div id="menu" class="hidden absolute top-0 left-0 w-96 min-h-screen pt-20 md:min-w-screen  bg-white text-black text-center z-50 text-4xl" >
+        <a href="#" class="block py-2">Home</a>
+        <a href="#" class="block py-2">About Us</a>
+        <a href="#" class="block py-2">Services</a>
+        <a href="#" class="block py-2">Contact</a>
+    </div>
+</header>
+<!-- Hero Section with Video Slider -->
+<div class="relative ">
+    <div class="flex justify-center">
+        <div class="relative w-full " style="height:80vh">
+            <video id="video-slider" class="w-full h-full object-cover" autoplay muted loop>
+                <source src="https://crumbl.video/87bc75cc-eb6f-495a-a489-d234242c0a58_US_Internal.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="absolute bottom-4 right-4 flex space-x-4">
+                <button id="toggle-play-pause" class="bg-black text-white py-2 px-4 rounded border-2 border-white">
+                    <i class="fas fa-pause"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Weekly Menu Section -->
+
+<!-- National Flavors Section -->
+<section class="py-8" style="padding-left: 10%; padding-right:10%">
+    <div class="container mx-auto">
+	  <div class="container mx-auto text-left  mb-2">
+        <span class="bg-pink-500 text-white py-1 px-3 rounded-full">
+            Week of October 1-7
+        </span>
+		<h2 class="text-4xl font-bold mb-8">
+            National Flavors
+        </h2>
+    </div>
+       <div class="hgap"></div>
+        <!-- Flavor Cards -->
+        <div class="space-y-8">
+            <!-- Milk Chocolate Chip -->
+            <div class="flavor-card flex flex-col md:flex-row items-center p-6 rounded-lg transition duration-300 hover:bg-yellow-200">
+                <img alt="Milk Chocolate Chip Cookie" class="w-48 h-48 object-cover rounded-full mleft" height="100" src="https://storage.googleapis.com/a1aa/image/JxgaPoCum7cFqIDHsa8eBnwHuE2W8oZygpov3Vr3MmA.jpg" width="100"/>
+                <div class="md:ml-6 mt-4 md:mt-0 w-full">
+                    <h1 class="text-2xl font-bold">
+                        Milk Chocolate Chip
+                    </h1>
+                    <p class="mt-2">
+                        The classic you can't go wrong with; thick, soft, and packed with milk chocolate chips.
+                    </p>
+                    <div class="mt-4">
+                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-300">
+                            Learn More
+                        </button>
+                        <button class="btn btn-order-now border-2 border-transparent text-black py-2 px-4 rounded transition duration-300">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+			<div class="hgap"></div>
+            <!-- S'mores Cake -->
+            <div class="flavor-card flex flex-col md:flex-row-reverse items-center p-6 rounded-lg transition duration-300 hover:bg-gray-300">
+                <img alt="S'mores Cake Cookie" class="w-48 h-48 object-cover rounded-full mright" height="100" src="https://storage.googleapis.com/a1aa/image/HEx5TsD57jHsbLAI3efPz-67HKnE4m-GCp13yQI2oH4.jpg" width="100"/>
+                <div class="md:mr-6 mt-4 md:mt-0 w-full">
+                    <h1 class="text-2xl font-bold">
+                        S'mores Cake
+                    </h1>
+                    <p class="mt-2">
+                        A graham cracker cookie topped with fluffy marshmallow frosting and a drizzle of chocolate.
+                    </p>
+                    <div class="mt-4">
+                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-300">
+                            Learn More
+                        </button>
+                        <button class="btn btn-order-now border-2 border-transparent text-black py-2 px-4 rounded transition duration-300">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+			<div class="hgap"></div>
+            <!-- Strawberry Cheesecake -->
+            <div class="flavor-card flex flex-col md:flex-row items-center p-6 rounded-lg transition duration-300 hover:bg-pink-200">
+                <img alt="Strawberry Cheesecake Cookie" class="w-48 h-48 object-cover rounded-full mleft" height="100" src="https://storage.googleapis.com/a1aa/image/Jniu4f3e8xB7PBu5r60bQKnzgv9_4m3--T5s-VQ8ilk.jpg" width="100"/>
+                <div class="md:ml-6 mt-4 md:mt-0 w-full">
+                    <h1 class="text-2xl font-bold">
+                        Strawberry Cheesecake
+                    </h1>
+                    <p class="mt-2">
+                        A graham cracker cookie topped with vanilla cream cheese frosting and a dollop of strawberry jam.
+                    </p>
+                    <div class="mt-4">
+                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-300">
+                            Learn More
+                        </button>
+                        <button class="btn btn-order-now border-2 border-transparent text-black py-2 px-4 rounded transition duration-300">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+			<div class="hgap"></div>
+            <!-- Spiced Apple White Chip -->
+            <div class="flavor-card flex flex-col md:flex-row-reverse items-center p-6 rounded-lg transition duration-300 hover:bg-pink-300">
+                <img alt="Spiced Apple White Chip Cookie" class="w-48 h-48 object-cover rounded-full mright" height="100" src="https://storage.googleapis.com/a1aa/image/gJqGcy57c8lFPG50ATntEnqigtjRofX0X7PUdw12u_c.jpg" width="100"/>
+                <div class="md:mr-6 mt-4 md:mt-0 w-full">
+                    <h1 class="text-2xl font-bold">
+                        Spiced Apple White Chip
+                    </h1>
+                    <p class="mt-2">
+                        A spiced cookie with apple pieces and white chocolate chips.
+                    </p>
+                    <div class="mt-4">
+                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-400">
+                            Learn More
+                        </button>
+                        <button class="btn btn-order-now border-2 border-transparent text-black py-2 px-4 rounded transition duration-300">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+			<div class="hgap"></div>
+            <!-- Nilla Bean Cupcake -->
+            <div class="flavor-card flex flex-col md:flex-row items-center p-6 rounded-lg transition duration-300 hover:bg-yellow-100">
+                <img alt="Nilla Bean Cupcake Cookie" class="w-48 h-48 object-cover rounded-full mleft" height="100" src="https://storage.googleapis.com/a1aa/image/lBwJuIlbH7hk4nquGhs6qmjCrK7rj98uQpNGw0CBShc.jpg" width="100"/>
+                <div class="md:ml-6 mt-4 md:mt-0 w-full">
+                    <h1 class="text-2xl font-bold">
+                        Nilla Bean Cupcake
+                    </h1>
+                    <p class="mt-2">
+                        A vanilla bean cookie topped with vanilla cream cheese frosting and a vanilla wafer.
+                    </p>
+                    <div class="mt-4">
+                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-300">
+                            Learn More
+                        </button>
+                        <button class="btn btn-order-now border-2 border-transparent text-black py-2 px-4 rounded transition duration-300">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+			<div class="hgap"></div>
+            <!-- Peanut Butter Brownie -->
+            <div class="flavor-card flex flex-col md:flex-row-reverse items-center p-6 rounded-lg transition duration-300 hover:bg-orange-400">
+                <img alt="Peanut Butter Brownie Cookie" class="w-48 h-48 object-cover rounded-full mright" height="100" src="https://storage.googleapis.com/a1aa/image/W-a2mI9kIOOMBLu_URfs-I6lOmgqVAMhzMEEUkZasiI.jpg" width="100"/>
+                <div class="md:mr-6 mt-4 md:mt-0 w-full">
+                    <h1 class="text-2xl font-bold">
+                        Peanut Butter Brownie
+                    </h1>
+                    <p class="mt-2">
+                        A rich chocolate cookie with a peanut butter swirl.
+                    </p>
+                    <div class="mt-4">
+                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-300">
+                            Learn More
+                        </button>
+                        <button class="btn btn-order-now border-2 border-transparent text-black py-2 px-4 rounded transition duration-300">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+			<div class="hgap"></div>
+            <!-- The Original Pink Sugar -->
+            <div class="flavor-card flex flex-col md:flex-row items-center p-6 rounded-lg transition duration-300 hover:bg-pink-300">
+                <img alt="The Original Pink Sugar Cookie" class="w-48 h-48 object-cover rounded-full mleft" height="100" src="https://storage.googleapis.com/a1aa/image/dHeHWB3AD62uUf3aA6IabLLim9QxsDLKQCxYpdBIJGI.jpg" width="100"/>
+                <div class="md:ml-6 mt-4 md:mt-0 w-full">
+                    <h1 class="text-2xl font-bold">
+                        The Original Pink Sugar
+                    </h1>
+                    <p class="mt-2">
+                        A sugar cookie topped with pink almond frosting.
+                    </p>
+                    <div class="mt-4">
+                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-300">
+                            Learn More
+                        </button>
+                        <button class="btn btn-order-now border-2 border-transparent text-black py-2 px-4 rounded transition duration-300">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+			<div class="hgap"></div>
+            <!-- Waffle -->
+            <div class="flavor-card flex flex-col md:flex-row-reverse items-center p-6 rounded-lg transition duration-300 hover:bg-yellow-300">
+                <img alt="Waffle Cookie" class="w-48 h-48 object-cover rounded-full mright" height="100" src="https://storage.googleapis.com/a1aa/image/ZBwbN6ea2Crxiooe5411EVOEXfLEZX_lt5CKB7b_lEs.jpg" width="100"/>
+                <div class="md:mr-6 mt-4 md:mt-0 w-full">
+                    <h1 class="text-2xl font-bold">
+                        Waffle
+                    </h1>
+                    <p class="mt-2">
+                        A waffle cookie topped with buttercream and a drizzle of syrup.
+                    </p>
+                    <div class="mt-4">
+                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-300">
+                            Learn More
+                        </button>
+                        <button class="btn btn-order-now border-2 border-transparent text-black py-2 px-4 rounded transition duration-300">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+			<div class="hgap"></div>
+            <!-- Cookie Dough Bites -->
+            <div class="flavor-card flex flex-col md:flex-row items-center p-6 rounded-lg transition duration-300 hover:bg-pink-400">
+                <img alt="Cookie Dough Bites" class="w-48 h-48 object-cover rounded-full mleft" height="100" src="https://storage.googleapis.com/a1aa/image/MdJlMWBnw0VndZ3BW-XulqmOXUowkjY2KODoNkA8JjE.jpg" width="100"/>
+                <div class="md:ml-6 mt-4 md:mt-0 w-full">
+                    <h1 class="text-2xl font-bold">
+                        Cookie Dough Bites
+                    </h1>
+                    <p class="mt-2">
+                        Edible cookie dough bites in a resealable bag.
+                    </p>
+                    <div class="mt-4">
+                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-300">
+                            Learn More
+                        </button>
+                        <button class="btn btn-order-now border-2 border-transparent text-black py-2 px-4 rounded transition duration-300">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="hgap"></div>
+</section>
+<!-- Footer Section -->
+<footer class="bg-pink-200 py-8">
+    <div class="container mx-auto text-center">
+        <div class="mb-4">
+            <a class="text-black mx-2" href="#">
+                Company
+            </a>
+            <a class="text-black mx-2" href="#">
+                About Us
+            </a>
+            <a class="text-black mx-2" href="#">
+                Services
+            </a>
+            <a class="text-black mx-2" href="#">
+                Contact
+            </a>
+            <a class="text-black mx-2" href="#">
+                Privacy Policy
+            </a>
+        </div>
+        <div class="mb-4">
+            <a class="text-black mx-2" href="#">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="text-black mx-2" href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a class="text-black mx-2" href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a class="text-black mx-2" href="#">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a class="text-black mx-2" href="#">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+        <div class="text-black text-lg font-bold">
+            crumbl
+        </div>
+        <div class="text-black">
+            © 2023 Crumbl. All rights reserved.
+        </div>
+    </div>
+</footer>
+<script>
+// Toggle the menu when the button is clicked
+document.getElementById('menu-toggle').addEventListener('click', function(event) {
+    var menu = document.getElementById('menu');
+    menu.classList.toggle('hidden');
+    
+    // Prevent click event from propagating to the document
+    event.stopPropagation();
+});
+
+
+	
+
+    window.addEventListener('scroll', function() {
+        var header = document.getElementById('header');
+        if (window.scrollY > 50) {
+            header.classList.add('sticky');
+            header.classList.remove('transparent');
+        } else {
+            header.classList.remove('sticky');
+            header.classList.add('transparent');
+        }
+    });
+
+    var video = document.getElementById('video-slider');
+    var toggleButton = document.getElementById('toggle-play-pause');
+
+    toggleButton.addEventListener('click', function() {
+        if (video.paused) {
+            video.play();
+            toggleButton.innerHTML = '<i class="fas fa-pause"></i>';
+        } else {
+            video.pause();
+            toggleButton.innerHTML = '<i class="fas fa-play"></i>';
+        }
+    });
+</script>
+</body>
+</html>
