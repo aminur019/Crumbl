@@ -62,6 +62,14 @@
 
 }
     </style>
+	<script>
+document.addEventListener('selectstart', (event) => event.preventDefault());
+document.addEventListener('copy', (event) => {
+    event.preventDefault();
+    alert("Copying is disabled on this site.");
+});
+		
+	</script>
 </head>
 <body class="bg-white text-gray-900">
 <!-- Header Section -->
