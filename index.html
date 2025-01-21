@@ -50,6 +50,7 @@
 		.md\:ml-6.mt-4.md\:mt-0.w-full {    margin-left: 100px; padding-left:50px}
 		.hgap{width:100%; height:100px}
 		.md\:mr-6.mt-4.md\:mt-0.w-full {    padding-left: 50px;}
+		.mbootm{margin-bottom:20px}
 
 @media (max-width:768px){
 
@@ -59,17 +60,14 @@
 		.md\:ml-6.mt-4.md\:mt-0.w-full {margin-left: 0px;	}
 		.hgap{width:0; height:0px}
 		.md\:mr-6.mt-4.md\:mt-0.w-full {    padding-left: 0px;}
+		.mbb-20{margin-bottom:20px}
+		img.w-48.h-48.object-cover.rounded-full.mleft.imtop, img.w-48.h-48.object-cover.rounded-full.imtop{ margin-top: -170px;}
+		.mmb-20 {margin-bottom: 170px !important;
+		.md:text-align{text-align:center}
+}
 
 }
     </style>
-	<script>
-document.addEventListener('selectstart', (event) => event.preventDefault());
-document.addEventListener('copy', (event) => {
-    event.preventDefault();
-    alert("Copying is disabled on this site.");
-});
-		
-	</script>
 </head>
 <body class="bg-white text-gray-900">
 <!-- Header Section -->
@@ -117,7 +115,7 @@ document.addEventListener('copy', (event) => {
 <!-- National Flavors Section -->
 <section class="py-8" style="padding-left: 10%; padding-right:10%">
     <div class="container mx-auto">
-	  <div class="container mx-auto text-left  mb-2">
+	  <div class="container mx-auto text-left  mmb-20">
         <span class="bg-pink-500 text-white py-1 px-3 rounded-full">
             Week of October 1-7
         </span>
@@ -129,8 +127,8 @@ document.addEventListener('copy', (event) => {
         <!-- Flavor Cards -->
         <div class="space-y-8">
             <!-- Milk Chocolate Chip -->
-            <div class="flavor-card flex flex-col md:flex-row items-center p-6 rounded-lg transition duration-300 hover:bg-yellow-200">
-                <img alt="Milk Chocolate Chip Cookie" class="w-48 h-48 object-cover rounded-full mleft" height="100" src="https://storage.googleapis.com/a1aa/image/JxgaPoCum7cFqIDHsa8eBnwHuE2W8oZygpov3Vr3MmA.jpg" width="100"/>
+            <div class="flavor-card flex flex-col md:flex-row items-center p-6 rounded-lg transition duration-300 hover:bg-yellow-200 mmb-20">
+                <img alt="Milk Chocolate Chip Cookie" class="w-48 h-48 object-cover rounded-full mleft imtop" height="100" src="https://storage.googleapis.com/a1aa/image/JxgaPoCum7cFqIDHsa8eBnwHuE2W8oZygpov3Vr3MmA.jpg" width="100"/>
                 <div class="md:ml-6 mt-4 md:mt-0 w-full">
                     <h1 class="text-2xl font-bold">
                         Milk Chocolate Chip
@@ -139,7 +137,7 @@ document.addEventListener('copy', (event) => {
                         The classic you can't go wrong with; thick, soft, and packed with milk chocolate chips.
                     </p>
                     <div class="mt-4">
-                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-300">
+                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-300 mbb-20">
                             Learn More
                         </button>
                         <button class="btn btn-order-now border-2 border-transparent text-black py-2 px-4 rounded transition duration-300">
@@ -150,8 +148,8 @@ document.addEventListener('copy', (event) => {
             </div>
 			<div class="hgap"></div>
             <!-- S'mores Cake -->
-            <div class="flavor-card flex flex-col md:flex-row-reverse items-center p-6 rounded-lg transition duration-300 hover:bg-gray-300">
-                <img alt="S'mores Cake Cookie" class="w-48 h-48 object-cover rounded-full mright" height="100" src="https://storage.googleapis.com/a1aa/image/HEx5TsD57jHsbLAI3efPz-67HKnE4m-GCp13yQI2oH4.jpg" width="100"/>
+            <div class="flavor-card flex flex-col md:flex-row-reverse items-center p-6 rounded-lg transition duration-300 hover:bg-gray-300 mmb-20">
+                <img alt="S'mores Cake Cookie" class="w-48 h-48 object-cover rounded-full mright imtop" height="100" src="https://storage.googleapis.com/a1aa/image/HEx5TsD57jHsbLAI3efPz-67HKnE4m-GCp13yQI2oH4.jpg" width="100"/>
                 <div class="md:mr-6 mt-4 md:mt-0 w-full">
                     <h1 class="text-2xl font-bold">
                         S'mores Cake
@@ -159,8 +157,8 @@ document.addEventListener('copy', (event) => {
                     <p class="mt-2">
                         A graham cracker cookie topped with fluffy marshmallow frosting and a drizzle of chocolate.
                     </p>
-                    <div class="mt-4">
-                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-300">
+                    <div class="mt-4 md:text-align">
+                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-300 mbb-20">
                             Learn More
                         </button>
                         <button class="btn btn-order-now border-2 border-transparent text-black py-2 px-4 rounded transition duration-300">
@@ -171,8 +169,8 @@ document.addEventListener('copy', (event) => {
             </div>
 			<div class="hgap"></div>
             <!-- Strawberry Cheesecake -->
-            <div class="flavor-card flex flex-col md:flex-row items-center p-6 rounded-lg transition duration-300 hover:bg-pink-200">
-                <img alt="Strawberry Cheesecake Cookie" class="w-48 h-48 object-cover rounded-full mleft" height="100" src="https://storage.googleapis.com/a1aa/image/Jniu4f3e8xB7PBu5r60bQKnzgv9_4m3--T5s-VQ8ilk.jpg" width="100"/>
+            <div class="flavor-card flex flex-col md:flex-row items-center p-6 rounded-lg transition duration-300 hover:bg-pink-200 mmb-20">
+                <img alt="Strawberry Cheesecake Cookie" class="w-48 h-48 object-cover rounded-full mleft imtop" height="100" src="https://storage.googleapis.com/a1aa/image/Jniu4f3e8xB7PBu5r60bQKnzgv9_4m3--T5s-VQ8ilk.jpg" width="100"/>
                 <div class="md:ml-6 mt-4 md:mt-0 w-full">
                     <h1 class="text-2xl font-bold">
                         Strawberry Cheesecake
@@ -181,7 +179,7 @@ document.addEventListener('copy', (event) => {
                         A graham cracker cookie topped with vanilla cream cheese frosting and a dollop of strawberry jam.
                     </p>
                     <div class="mt-4">
-                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-300">
+                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-300 mbb-20">
                             Learn More
                         </button>
                         <button class="btn btn-order-now border-2 border-transparent text-black py-2 px-4 rounded transition duration-300">
@@ -192,8 +190,8 @@ document.addEventListener('copy', (event) => {
             </div>
 			<div class="hgap"></div>
             <!-- Spiced Apple White Chip -->
-            <div class="flavor-card flex flex-col md:flex-row-reverse items-center p-6 rounded-lg transition duration-300 hover:bg-pink-300">
-                <img alt="Spiced Apple White Chip Cookie" class="w-48 h-48 object-cover rounded-full mright" height="100" src="https://storage.googleapis.com/a1aa/image/gJqGcy57c8lFPG50ATntEnqigtjRofX0X7PUdw12u_c.jpg" width="100"/>
+            <div class="flavor-card flex flex-col md:flex-row-reverse items-center p-6 rounded-lg transition duration-300 hover:bg-pink-300 mmb-20">
+                <img alt="Spiced Apple White Chip Cookie" class="w-48 h-48 object-cover rounded-full mright imtop" height="100" src="https://storage.googleapis.com/a1aa/image/gJqGcy57c8lFPG50ATntEnqigtjRofX0X7PUdw12u_c.jpg" width="100"/>
                 <div class="md:mr-6 mt-4 md:mt-0 w-full">
                     <h1 class="text-2xl font-bold">
                         Spiced Apple White Chip
@@ -202,7 +200,7 @@ document.addEventListener('copy', (event) => {
                         A spiced cookie with apple pieces and white chocolate chips.
                     </p>
                     <div class="mt-4">
-                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-400">
+                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-400 mbb-20">
                             Learn More
                         </button>
                         <button class="btn btn-order-now border-2 border-transparent text-black py-2 px-4 rounded transition duration-300">
@@ -213,8 +211,8 @@ document.addEventListener('copy', (event) => {
             </div>
 			<div class="hgap"></div>
             <!-- Nilla Bean Cupcake -->
-            <div class="flavor-card flex flex-col md:flex-row items-center p-6 rounded-lg transition duration-300 hover:bg-yellow-100">
-                <img alt="Nilla Bean Cupcake Cookie" class="w-48 h-48 object-cover rounded-full mleft" height="100" src="https://storage.googleapis.com/a1aa/image/lBwJuIlbH7hk4nquGhs6qmjCrK7rj98uQpNGw0CBShc.jpg" width="100"/>
+            <div class="flavor-card flex flex-col md:flex-row items-center p-6 rounded-lg transition duration-300 hover:bg-yellow-100 mmb-20">
+                <img alt="Nilla Bean Cupcake Cookie" class="w-48 h-48 object-cover rounded-full mleft imtop" height="100" src="https://storage.googleapis.com/a1aa/image/lBwJuIlbH7hk4nquGhs6qmjCrK7rj98uQpNGw0CBShc.jpg" width="100"/>
                 <div class="md:ml-6 mt-4 md:mt-0 w-full">
                     <h1 class="text-2xl font-bold">
                         Nilla Bean Cupcake
@@ -222,8 +220,8 @@ document.addEventListener('copy', (event) => {
                     <p class="mt-2">
                         A vanilla bean cookie topped with vanilla cream cheese frosting and a vanilla wafer.
                     </p>
-                    <div class="mt-4">
-                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-300">
+                    <div class="mt-4 md:text-align">
+                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-300 mbb-20">
                             Learn More
                         </button>
                         <button class="btn btn-order-now border-2 border-transparent text-black py-2 px-4 rounded transition duration-300">
@@ -234,8 +232,8 @@ document.addEventListener('copy', (event) => {
             </div>
 			<div class="hgap"></div>
             <!-- Peanut Butter Brownie -->
-            <div class="flavor-card flex flex-col md:flex-row-reverse items-center p-6 rounded-lg transition duration-300 hover:bg-orange-400">
-                <img alt="Peanut Butter Brownie Cookie" class="w-48 h-48 object-cover rounded-full mright" height="100" src="https://storage.googleapis.com/a1aa/image/W-a2mI9kIOOMBLu_URfs-I6lOmgqVAMhzMEEUkZasiI.jpg" width="100"/>
+            <div class="flavor-card flex flex-col md:flex-row-reverse items-center p-6 rounded-lg transition duration-300 hover:bg-orange-400 mmb-20">
+                <img alt="Peanut Butter Brownie Cookie" class="w-48 h-48 object-cover rounded-full mright imtop" height="100" src="https://storage.googleapis.com/a1aa/image/W-a2mI9kIOOMBLu_URfs-I6lOmgqVAMhzMEEUkZasiI.jpg" width="100"/>
                 <div class="md:mr-6 mt-4 md:mt-0 w-full">
                     <h1 class="text-2xl font-bold">
                         Peanut Butter Brownie
@@ -244,7 +242,7 @@ document.addEventListener('copy', (event) => {
                         A rich chocolate cookie with a peanut butter swirl.
                     </p>
                     <div class="mt-4">
-                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-300">
+                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-300 mbb-20">
                             Learn More
                         </button>
                         <button class="btn btn-order-now border-2 border-transparent text-black py-2 px-4 rounded transition duration-300">
@@ -255,8 +253,8 @@ document.addEventListener('copy', (event) => {
             </div>
 			<div class="hgap"></div>
             <!-- The Original Pink Sugar -->
-            <div class="flavor-card flex flex-col md:flex-row items-center p-6 rounded-lg transition duration-300 hover:bg-pink-300">
-                <img alt="The Original Pink Sugar Cookie" class="w-48 h-48 object-cover rounded-full mleft" height="100" src="https://storage.googleapis.com/a1aa/image/dHeHWB3AD62uUf3aA6IabLLim9QxsDLKQCxYpdBIJGI.jpg" width="100"/>
+            <div class="flavor-card flex flex-col md:flex-row items-center p-6 rounded-lg transition duration-300 hover:bg-pink-300 mmb-20">
+                <img alt="The Original Pink Sugar Cookie" class="w-48 h-48 object-cover rounded-full mleft imtop" height="100" src="https://storage.googleapis.com/a1aa/image/dHeHWB3AD62uUf3aA6IabLLim9QxsDLKQCxYpdBIJGI.jpg" width="100"/>
                 <div class="md:ml-6 mt-4 md:mt-0 w-full">
                     <h1 class="text-2xl font-bold">
                         The Original Pink Sugar
@@ -264,8 +262,8 @@ document.addEventListener('copy', (event) => {
                     <p class="mt-2">
                         A sugar cookie topped with pink almond frosting.
                     </p>
-                    <div class="mt-4">
-                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-300">
+                    <div class="mt-4 md:text-align">
+                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-300 mbb-20">
                             Learn More
                         </button>
                         <button class="btn btn-order-now border-2 border-transparent text-black py-2 px-4 rounded transition duration-300">
@@ -276,8 +274,8 @@ document.addEventListener('copy', (event) => {
             </div>
 			<div class="hgap"></div>
             <!-- Waffle -->
-            <div class="flavor-card flex flex-col md:flex-row-reverse items-center p-6 rounded-lg transition duration-300 hover:bg-yellow-300">
-                <img alt="Waffle Cookie" class="w-48 h-48 object-cover rounded-full mright" height="100" src="https://storage.googleapis.com/a1aa/image/ZBwbN6ea2Crxiooe5411EVOEXfLEZX_lt5CKB7b_lEs.jpg" width="100"/>
+            <div class="flavor-card flex flex-col md:flex-row-reverse items-center p-6 rounded-lg transition duration-300 hover:bg-yellow-300 mmb-20">
+                <img alt="Waffle Cookie" class="w-48 h-48 object-cover rounded-full mright imtop" height="100" src="https://storage.googleapis.com/a1aa/image/ZBwbN6ea2Crxiooe5411EVOEXfLEZX_lt5CKB7b_lEs.jpg" width="100"/>
                 <div class="md:mr-6 mt-4 md:mt-0 w-full">
                     <h1 class="text-2xl font-bold">
                         Waffle
@@ -286,7 +284,7 @@ document.addEventListener('copy', (event) => {
                         A waffle cookie topped with buttercream and a drizzle of syrup.
                     </p>
                     <div class="mt-4">
-                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-300">
+                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-300 mbb-20">
                             Learn More
                         </button>
                         <button class="btn btn-order-now border-2 border-transparent text-black py-2 px-4 rounded transition duration-300">
@@ -297,8 +295,8 @@ document.addEventListener('copy', (event) => {
             </div>
 			<div class="hgap"></div>
             <!-- Cookie Dough Bites -->
-            <div class="flavor-card flex flex-col md:flex-row items-center p-6 rounded-lg transition duration-300 hover:bg-pink-400">
-                <img alt="Cookie Dough Bites" class="w-48 h-48 object-cover rounded-full mleft" height="100" src="https://storage.googleapis.com/a1aa/image/MdJlMWBnw0VndZ3BW-XulqmOXUowkjY2KODoNkA8JjE.jpg" width="100"/>
+            <div class="flavor-card flex flex-col md:flex-row items-center p-6 rounded-lg transition duration-300 hover:bg-pink-400 mmb-20">
+                <img alt="Cookie Dough Bites" class="w-48 h-48 object-cover rounded-full mleft imtop" height="100" src="https://storage.googleapis.com/a1aa/image/MdJlMWBnw0VndZ3BW-XulqmOXUowkjY2KODoNkA8JjE.jpg" width="100"/>
                 <div class="md:ml-6 mt-4 md:mt-0 w-full">
                     <h1 class="text-2xl font-bold">
                         Cookie Dough Bites
@@ -306,8 +304,8 @@ document.addEventListener('copy', (event) => {
                     <p class="mt-2">
                         Edible cookie dough bites in a resealable bag.
                     </p>
-                    <div class="mt-4">
-                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-300">
+                    <div class="mt-4 md:text-align">
+                        <button class="btn btn-learn-more border-2 border-transparent text-black py-2 px-4 rounded mr-2 transition duration-300 mbb-20">
                             Learn More
                         </button>
                         <button class="btn btn-order-now border-2 border-transparent text-black py-2 px-4 rounded transition duration-300">
